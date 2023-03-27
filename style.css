@@ -6,7 +6,7 @@
     box-sizing: border-box;
   }
   header {
-    background: rgba(0,0,0,0.9);
+  
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -14,7 +14,7 @@
   .vh {height: 100vh;
   }
   .vh2 {
-    height:80vh;
+    height:68vh;
 }
 .seccionproyecto {
   margin: 1.5rem;
@@ -45,8 +45,9 @@ padding: 1rem;
   font-family: 'Roboto', sans-serif;
 }
   .texto-principal {
-    
+
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
@@ -54,9 +55,10 @@ padding: 1rem;
   }
   .seccion-principal {
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 
   }
 
@@ -81,9 +83,10 @@ flex-direction: column;
  }
   .imagenPrincipal {
     display: inline-flex;
-
     justify-content: space-evenly;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+
 }
 .textoPrincipal {
 
@@ -97,12 +100,8 @@ flex-direction: column;
     height: auto;
 padding-top: 3REM;
   }
-  footer {
-    background: linear-gradient(45deg, rgb(1, 39, 46) 0%, rgba(1,3,45,1) 100%);   
-  }
+
   body {
-    background-color: #000!important; 
-        
     align-items: center;
     justify-content: center;    
     height: 100vh;  
@@ -468,13 +467,13 @@ justify-content: space-between;
 /*  /////////////////////////////////////// FOOTER */
 footer
 {
-
+  margin: 3rem;
     padding: 1.5rem;
 }
 .footer-basic {
    
-    background-color:#ffffff;
-    color:#4b4c4d;
+   
+    color:#e1e1e2;
   }
   
   .footer-basic ul {
@@ -502,18 +501,18 @@ footer
   
   .footer-basic .social {
     text-align:center;
-    padding-bottom:25px;
+    padding-bottom:30px;
   }
   
   .footer-basic .social > a {
     font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
+    width:50px;
+    height:50px;
+    line-height:50px;
     display:inline-block;
     text-align:center;
     border-radius:50%;
-    border:1px solid #ccc;
+    border:1px solid #cccccc;
     margin:0 8px;
     color:inherit;
     opacity:0.75;
@@ -660,12 +659,8 @@ footer
     p {
         color: #000;
     }
-/* //////////// ACA ES LO DEL FONDO */
 
- html {
- 
-    background: #000;
-}
+
 /*  /////////////////////////////////////////formularioooooo */
 
 form { max-width:420px; margin:50px auto; }
@@ -748,5 +743,23 @@ textarea {
 }
 .face-button:hover .face-primary {
   margin-top: -64px;
+}
+
+
+
+body {
+  --s: 50px;
+  --c: #191b22;
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+  background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c) !important;
+  background-attachment: fixed;
 }
 
