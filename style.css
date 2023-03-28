@@ -128,11 +128,14 @@ padding-top: 1REM;
     color: aliceblue;
   }
 
+  section {
+
+  }
 /* /////////////////////////////  ACA ES LO DEL NAV ////////////////////////*/
 
   .nav {
-  
-justify-content: space-between;
+ 
+    justify-content: space-around;
     height: 50px;
     width: 100%;
     backdrop-filter: blur(16px) saturate(180%);
@@ -156,11 +159,12 @@ justify-content: space-between;
     text-decoration: none;  }
   
   .nav > .nav-btn {
+    padding-right: 1rem;
     display: none;
   }
   
   .nav > .nav-links {
- 
+    
     display: inline;
     float: right;
     font-size: 18px;
@@ -185,7 +189,7 @@ justify-content: space-between;
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:650px) {
     .nav > .nav-btn {
       
       display: inline-block;
@@ -194,7 +198,7 @@ justify-content: space-between;
       top: 0px;
     }
     .nav > .nav-btn > label {
-      
+   
       display: inline-block;
       width: 50px;
       height: 50px;
@@ -204,7 +208,7 @@ justify-content: space-between;
         background: linear-gradient(45deg, rgb(1, 39, 46) 0%, rgba(11,3,45,1) 100%);    
     }
     .nav > .nav-btn > label > span {
-      
+         padding-right: 1rem;
       display: block;
       width: 25px;
       height: 10px;
@@ -249,248 +253,117 @@ justify-content: space-between;
 
   /*/////////////////////////// ESTO ES DE LAS CARDS */
 
-  :root {
-/*     --purple: #603f8b;
-    --aqua: #b4fee7;
-    --violet: #a16ae8;
-    --fuchsia: #fd49a0; */
-/*     --white: #efefef; */
-    --black: #222;
-    --trueBlack: #000;
-  }
-  
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+  /* Design */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
   
-
+ 
   
-  .main {
+  
+  .main{
     max-width: 1200px;
     margin: 0 auto;
   }
   
+
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
   .cards {
-    display: grid;
+  
+    display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
   }
   
   .cards_item {
     display: flex;
+    padding: 1rem;
   }
   
-  .card_image {
-    display: flex;
-    height: 250px;
-    box-shadow: 0 50px 100px 0 var(--violet);
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
   }
   
-  .card_image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
   }
   
-  .card {
+  .cardo {
+    
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    position: relative;
     overflow: hidden;
-    background-color: var(--purple);
-    border-radius: 5px 25px 5px 50px;
-    transition: transform 0.1s linear, box-shadow 0.2s;
-  }
-  
-  .card_text:focus,
-  .card:focus {
-    outline: 2px dashed var(--aqua);
-  }
-  
-  .card:focus,
-  .card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.2);
   }
   
   .card_content {
-    padding: 0.5rem 1rem 1rem;
-    color: var(--white);
+
+
+    border-color: #130f89;
+    padding: 1rem;
+
+ background-color: rgba(13, 0, 41, 0.919);
   }
   
   .card_title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 90%;
-    height: auto;
-    color: aliceblue;
-    padding: 0.5rem;
-    border-radius: 5px 0 0 5px;
-    transform: rotate(-3.3deg);
-    transform-origin: left top;
-    font-family: Georgia, Times, serif;
-    font-weight: 600;
-    font-size: 1.325rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: rgba(4, 49, 78, 0.63);
-    animation: 0s 0s fly-in 0 reverse both;
-  }
-  
-  @media (min-width: 535px) {
-    .card_title {
-      animation: 0.5s 0.25s fly-out 1 both;
-    }
-  }
-  
-  .card:focus .card_title,
-  .card:hover .card_title {
-    animation: 0.5s ease-in 0s fly-in 1 both;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
   }
   
   .card_text {
-    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica,
-      Helvetica Neue, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 0.875rem;
     line-height: 1.5;
-    text-size-adjust: 0.2px;
-    padding: 0 1rem;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
   }
-  
-  .card_text p:first-of-type:first-letter {
-    font-size: 1.8em;
-    font-family: Georgia, Times, serif;
-    margin-right: 0.05em;
-  }
-  
-  @media (min-width: 480px) {
-    .card_text {
-      overflow: auto;
-      max-height: 20rem;
-      scrollbar-width: thin;
-      scrollbar-color: var(--aqua) var(--violet);
-    }
-  
-    .card_text::-webkit-scrollbar {
-      width: 12px;
-    }
-  
-    .card_text::-webkit-scrollbar-track {
-      background: var(--violet);
-    }
-  
-    .card_text::-webkit-scrollbar-thumb {
-      background-color: var(--aqua);
-    }
-  }
-  
-  .card_text strong {
-    color: var(--aqua);
-  }
-  
-  .upcharge {
-    position: relative;
-    font-weight: 600;
-    background-color: var(--violet);
-    padding: 0.5rem 0.75rem;
-    color: var(--trueBlack);
-    border-radius: 0 10px;
-    z-index: 0;
-    overflow: hidden;
-  }
-  
-  .upcharge::after,
-  .upcharge::before {
-    content: "+";
-    display: block;
-    line-height: 0;
-    font-size: 3rem;
-    position: absolute;
-    color: var(--purple);
-    z-index: -1;
-    opacity: 0.3;
-  }
-  
-  .upcharge::before {
-    left: 0;
-    top: 0.5rem;
-  }
-  
-  .upcharge::after {
-    right: 0;
-    bottom: 1.25rem;
-  }
-  
-  .note {
-    display: block;
+  .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
     text-align: center;
-    padding: 0.5rem;
-    font-weight: 900;
-    background-image: linear-gradient(
-      -45deg,
-      transparent 10%,
-      var(--aqua) 10.5%,
-      var(--aqua) 90%,
-      transparent 90.5%
-    );
-    color: var(--black);
-    font-size: 1.3em;
-    font-style: italic;
-    margin-top: 1rem;
   }
-  
-  @keyframes fly-in {
-    0% {
-      top: 0;
-      right: 0;
-      font-size: 1.325rem;
-    }
-  
-    25% {
-      top: 0;
-      right: -200%;
-      font-size: 1.325rem;
-    }
-  
-    26% {
-      font-size: 2rem;
-    }
-  
-    100% {
-      top: 2rem;
-      right: 0;
-      font-size: 2rem;
-    }
-  }
-  
-  @keyframes fly-out {
-    0% {
-      top: 2rem;
-      right: 0;
-      font-size: 2rem;
-    }
-  
-    50% {
-      top: 0;
-      right: -200%;
-      font-size: 1.325rem;
-    }
-  
-    100% {
-      top: 0;
-      right: 0;
-      font-size: 1.325rem;
-    }
-  }
-  
+
 
 /*  /////////////////////////////////////// FOOTER */
 .footer-basic {
@@ -537,7 +410,7 @@ justify-content: space-between;
     text-align:center;
     border-radius:50%;
     border:1px solid #cccccc;
-    margin:2rem 1rem;
+    margin:2rem 1remyy;
     color:inherit;
     opacity:0.75;
   }
@@ -564,12 +437,12 @@ justify-content: space-between;
     text-align: center;
     color: #fff;
     padding: 1rem;
-    position: relative;
+    
     }
     
     .skills-header:after{
     content: '';
-    position: absolute;
+   
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -609,7 +482,7 @@ justify-content: space-between;
     align-items:center;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
-    position: relative;
+    
     }
     
     .skills-title:after{
@@ -643,7 +516,7 @@ justify-content: space-between;
     .skills-img{
     width:90px;
     height:90px;
-    position: relative;
+    
     border-radius: 45px;
     background-color: #fff;
     display:flex;
@@ -651,21 +524,8 @@ justify-content: space-between;
     align-items:center;
     transition: .5s;
     }
-    
-    .skills-img:after{
-    content: '';
-    position:absolute;
-    top:0;
-    left: 0;
-    width:50%;
-    height:90px;
-    background: rgba(100, 100, 100, 0.5);
-    border-radius: 45px 0 0 45px;
-    }
-    .skills-title h3{
-    color: #fbffff;
-    margin-top: 0.5rem;
-    }
+   
+
     @media screen and (max-width:990px){
      .skills-container{
      grid-tempLate-columns: repeat(2, 1fr);
