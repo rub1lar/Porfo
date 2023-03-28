@@ -9,12 +9,15 @@
   
     width: 100%;
     position: fixed;
-    z-index: 100;
+    
   }
   .vh {height: 100vh;
   }
   .vh2 {
     height:68vh;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .seccionproyecto {
   margin: 1.5rem;
