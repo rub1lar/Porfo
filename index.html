@@ -30,7 +30,9 @@
     <div class="nav">
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
-        <div class="nav-title">Sebastian Rubilar</div>
+        <a  href= "#principal" class="nav-title">
+          <div  >Sebastian Rubilar</div>
+        </a>
       </div>
       <div class="nav-btn">
         <label for="nav-check">
@@ -41,10 +43,10 @@
       </div>
 
       <div class="nav-links">
-        <a href="" target="_blank">Sobre Mi</a>
-        <a href="" target="_blank">Mis Proyectos</a>
-        <a href="" target="_blank">Skill</a>
-        <a href="" target="_blank">Contacto</a>
+        <a href="#sobremi" >Sobre Mi</a>
+        <a href="#proyecto" >Mis Proyectos</a>
+        <a href="#skill" >Skill</a>
+        <a href="#contacto" >Contacto</a>
 
     
       </div>
@@ -54,7 +56,7 @@
   <body>
     <main>
        
-      <section class="vh seccion-principal">   
+      <section class="vh seccion-principal " id="principal">   
             <div>
             <div class="imagenPrincipal">
           <div class="texto-principal">
@@ -81,7 +83,7 @@
 
       </section>
 
-      <section class=" sobremi">
+      <section class=" sobremi"  id="sobremi">
         <div>
 
            <h3 class="text-white text-center roboto">Sobre Mi</h3>
@@ -114,7 +116,7 @@
 
 
       
-      <section class="seccionproyecto">
+      <section class="seccionproyecto"  id="proyecto">
         <h1 class=" tituloProyectos roboto">Mis Proyectos</h1>
         <div class="main">
           <ul class="cards">
@@ -208,7 +210,7 @@
 
 
       <section >
-        <div class="skills-section">
+        <div class="skills-section"  id="skill">
             <div class="skills-header">
              <h3 class=" roboto">Skills</h3>   
              </div>
@@ -324,8 +326,8 @@
              </div>
       </section>
       
-      <section class="vh2 contacto">
-<h1 class="text-center text-white  roboto pt-4 ">CONTACTO</h1>
+      <section class="contacto">
+<h1 class="text-center text-white  roboto pt-4 " id="contacto" >CONTACTO</h1>
 <form>      
     <input name="name" type="text" class="feedback-input" placeholder="Name" />   
     <input name="email" type="text" class="feedback-input" placeholder="Email" />
@@ -334,7 +336,7 @@
     <h4 class="text-center text-white pt-3 mt-3
     ">O descarga el CV:</h4>
 
-    <div class="text-center pb-5" >
+    <div class="text-center " >
 
       <a class="face-button " href="cv.pdf" target="_blank" download="CV Sebastian Rubilar">
 
@@ -343,7 +345,6 @@
           </span>
         Descargar CV
         </div>
-        
         <div class="face-secondary">
           <span class="icon fa fa-hdd-o"></span>
           Size: 224 KB
@@ -360,16 +361,18 @@
   <div class="footer-basic">
       <footer>
         <div class="social">
-          <a href="#"><i class="icon ion-social-instagram"></i></a
-          ><a href="#"><i class="icon ion-social-linkedin"></i></a
-          ><a href="#"><i class="icon ion-social-github"></i></a
+          <a href="https://www.instagram.com/s3b4_4r/" target="_blank"><i class="icon ion-social-instagram"></i></a
+          ><a href="https://www.linkedin.com/in/sebastian-rubilar-13b496243/" target="_blank"><i class="icon ion-social-linkedin"></i></a
+          ><a href="https://github.com/rub1lar" target="_blank"><i class="icon ion-social-github" ></i></a
         
         </div>
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Sobre Mi</a></li>
-          <li class="list-inline-item"><a href="#">Mis Proyectos</a></li>
-          <li class="list-inline-item"><a href="#">Skill</a></li>
-          <li class="list-inline-item"><a href="#">Contacto</a></li>
+          <li class="list-inline-item"><a href="#principal">Volver arriba</a></li>
+
+          <li class="list-inline-item"><a href="#sobremi">Sobre Mi</a></li>
+          <li class="list-inline-item"><a href="#proyecto">Mis Proyectos</a></li>
+          <li class="list-inline-item"><a href="#skill">Skill</a></li>
+          <li class="list-inline-item"><a href="#contacto">Contacto</a></li>
 
         </ul>
         <p class="copyright">Desarrollado plenamente con amor por Sebastian Rubilar</p>
