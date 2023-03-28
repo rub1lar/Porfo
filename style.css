@@ -262,24 +262,34 @@ padding-top: 1REM;
     box-sizing: border-box;
   }
   
+ .imagen {
+  box-shadow: 0px 0px 40px 5px #130f89;/*  //sombra neon */
+  border-radius: 50%;
+ }
  
-  
   
   .main{
     max-width: 1200px;
     margin: 0 auto;
   }
   
-
+.img2{
+  box-shadow: 0px 0px 20px 5px #6a6a71;
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 40%;
+}
   
   img {
+    border-radius: 5%;
     height: auto;
     max-width: 100%;
     vertical-align: middle;
   }
   
   .btn {
-    color: #ffffff;
+    border-color: #000000!important;
+    color: #ffffff !important;
     padding: 0.8rem;
     font-size: 14px;
     text-transform: uppercase;
@@ -297,8 +307,8 @@ padding-top: 1REM;
   }
   
   .cards {
-  
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
@@ -306,6 +316,7 @@ padding-top: 1REM;
   }
   
   .cards_item {
+    box-shadow: 10px 10px 10px 10px ;
     display: flex;
     padding: 1rem;
   }
@@ -321,10 +332,10 @@ padding-top: 1REM;
       width: 33.3333%;
     }
   }
-  
-  .cardo {
-    
-    background-color: white;
+
+  .cardo { border-radius: 5%!important;
+    justify-content: space-between;
+    background-color: rgba(13, 0, 41, 0.919);
     border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -341,7 +352,11 @@ padding-top: 1REM;
  background-color: rgba(13, 0, 41, 0.919);
   }
   
-  .card_title {
+  .card_title { 
+    text-align: center;
+    
+    font-family: 'Roboto', sans-serif;
+    padding-bottom:1rem ;
     color: #ffffff;
     font-size: 1.1rem;
     font-weight: 700;
@@ -351,18 +366,17 @@ padding-top: 1REM;
   }
   
   .card_text {
+   
+
+    
+    text-align: center;
     color: #ffffff;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;    
     font-weight: 400;
   }
-  .made_by{
-    font-weight: 400;
-    font-size: 13px;
-    margin-top: 35px;
-    text-align: center;
-  }
+
 
 
 /*  /////////////////////////////////////// FOOTER */
@@ -457,22 +471,28 @@ padding-top: 1REM;
     display: grid;
     grid-tempLate-columns: repeat(5, 1fr);
     justify-content:center;
-    align-items: stretch;
+    align-items:center;
    
     text-align: center;
     grid-gap:1rem;
-    padding: 1rem 80px;
+   
     font-size: 1.2rem;
     }
     .skills-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
     padding: 1rem;
-    color: #000;
+    color: #ffffff;
     cursor:pointer;
     }
   
 
     .skills-box:hover .skills-img{
-    transform: translateX(-20px);
+    transform: translateX(20px);
+    
+
     }
     
     .skills-title{
@@ -485,28 +505,8 @@ padding-top: 1REM;
     
     }
     
-    .skills-title:after{
-    content: '';
-    position:absolute;
-    bottom: 0;
-    right: 50%;
-    width:20px;
-    height:4px;
-    border-radius: 2px 0 0 2px;
-    background-color: rgb(6, 34, 193) ;
-    transition: .5s;
-    }
+ 
     
-    .skills-title:before{
-    content: '';
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    width:100px;
-    height:4px;
-    border-radius: 0 2px 2px 0;
-    background-color: rgb(6, 34, 193) 
-    }
     
     .skills-icons{
     width:50px;
@@ -514,6 +514,7 @@ padding-top: 1REM;
     }
     
     .skills-img{
+      box-shadow: 0px 0px 40px 5px #130f89;
     width:90px;
     height:90px;
     
@@ -541,7 +542,7 @@ padding-top: 1REM;
     }
 
     p {
-        color: #000;
+        color: #b6b2b2;
     }
 
 
