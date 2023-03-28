@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 * { 
+
     box-sizing: border-box;
   }
   header {
@@ -159,12 +160,14 @@ justify-content: space-between;
   }
   
   .nav > .nav-links {
+ 
     display: inline;
     float: right;
     font-size: 18px;
   }
   
   .nav > .nav-links > a {
+    
     display: inline-block;
     justify-content: space-around;
     padding: 13px 10px 13px 10px;
@@ -175,7 +178,7 @@ justify-content: space-between;
   .nav > .nav-links > a:hover {
     border-radius: 30px;
     height: 3rem;
-    background:  rgb(13, 34, 153) ;  
+    background:  rgba(137, 138, 140, 0.878) ;  
   }
   
   .nav > #nav-check {
@@ -184,12 +187,14 @@ justify-content: space-between;
   
   @media (max-width:600px) {
     .nav > .nav-btn {
+      
       display: inline-block;
       position: absolute;
       right: 0px;
       top: 0px;
     }
     .nav > .nav-btn > label {
+      
       display: inline-block;
       width: 50px;
       height: 50px;
@@ -199,24 +204,37 @@ justify-content: space-between;
         background: linear-gradient(45deg, rgb(1, 39, 46) 0%, rgba(11,3,45,1) 100%);    
     }
     .nav > .nav-btn > label > span {
+      
       display: block;
       width: 25px;
       height: 10px;
       border-top: 2px solid #eee;
     }
     .nav > .nav-links {
-      position: absolute;
-      display: block;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       width: 100%;   
-       background-color: black; /* color del fondo del nav  */
+      background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c) !important; /* color del fondo del nav  */
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+  
     }
     .nav > .nav-links > a {
-      display: block;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      align-content: space-around;
       width: 100%;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
@@ -321,7 +339,7 @@ justify-content: space-between;
     font-family: Georgia, Times, serif;
     font-weight: 600;
     font-size: 1.325rem;
-    postition: relative;
+    position: relative;
     overflow: hidden;
     z-index: 1;
     background-color: rgba(4, 49, 78, 0.63);
@@ -510,6 +528,7 @@ justify-content: space-between;
   }
   
   .footer-basic .social > a {
+
     font-size:24px;
     width:50px;
     height:50px;
@@ -518,7 +537,7 @@ justify-content: space-between;
     text-align:center;
     border-radius:50%;
     border:1px solid #cccccc;
-    margin:0 8px;
+    margin:2rem 1rem;
     color:inherit;
     opacity:0.75;
   }
@@ -657,7 +676,7 @@ justify-content: space-between;
     @media screen and (max-width:650px){
      .skills-container{
      grid-tempLate-columns: repeat(2, 1fr);
-     padding: 2rem 50px;
+     padding: 2rem 20px;
      }
     }
 
