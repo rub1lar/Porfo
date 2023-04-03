@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-* { 
-
+* {
     box-sizing: border-box;
   }
   header {
@@ -27,13 +26,14 @@
   align-content: center;
 }
 
+section {
+  margin: auto;
+}
 .divSobreMi{
- 
   padding: 2rem;
   margin-top: 4rem;
 }
 .flex {
-
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -62,7 +62,7 @@ padding: 1rem;
   font-family: 'Roboto', sans-serif;
 }
   .texto-principal {
-    
+   
     font-weight: 700;
     color: aliceblue!important;
     display: flex;
@@ -70,7 +70,7 @@ padding: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin: 2rem;
+    margin:0;
 
   }
   .seccion-principal {
@@ -83,7 +83,6 @@ padding: 1rem;
   }
   
   h1{
-
     font-size: 1rem;
   }
   .sobre-mi {
@@ -558,9 +557,7 @@ padding-top: 1REM;
      }
     }
 
-    p {
-        color: #b6b2b2;
-    }
+   
 
 
 /*  /////////////////////////////////////////formularioooooo */
@@ -676,25 +673,10 @@ max-height: auto;
 
 /* ///////////////EFECTOS//// */
 
-.line {
-  position: initial
-  ;
-  margin-top: 4rem!important;
-  top: 50%;
-  width: 16em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  text-align: center;
 
-  overflow: hidden;transform: translateY(-50%);
-}
 
 
 /*Animation*/
-
-
-  
-   
   
   .animated-shadow {
    padding: 1rem;
