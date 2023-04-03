@@ -27,6 +27,11 @@
   align-content: center;
 }
 
+.divSobreMi{
+ 
+  padding: 2rem;
+  margin-top: 4rem;
+}
 .flex {
 
 display: flex;
@@ -73,9 +78,10 @@ padding: 1rem;
     align-items: center;
 
   }
-  .divSobreMi{
-    margin: 3rem;
+  
+  h1{
 
+    font-size: 1rem;
   }
   .sobre-mi {
    
@@ -86,7 +92,9 @@ padding: 1rem;
     padding: 2rem;
     color: whitesmoke;
   }
-.sobremi {
+.sobremi {  
+ 
+  padding: 3rem; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -661,3 +669,45 @@ max-height: auto;
   box-shadow: 0px 0px 10px 3px  #0037a4;/*  //sombra neon */
   border-radius: 50%;
 }
+
+/* ///////////////EFECTOS//// */
+
+.line {
+  position: initial
+  ;
+  margin-top: 4rem!important;
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+
+  overflow: hidden;transform: translateY(-50%);
+}
+
+
+/*Animation*/
+.anim-typewriter {
+  animation: typewriter 4s steps(36) 1s 1 normal both,
+  blinkTextCursor 500ms steps(36) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+        width: 0;
+  }
+  to {
+        width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+        border-right-color: transparent;
+  }
+}
+
+
