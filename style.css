@@ -30,7 +30,7 @@ section {
   margin: auto;
 }
 .divSobreMi{
-  padding: 2rem;
+ 
   margin-top: 4rem;
 }
 .flex {
@@ -122,12 +122,7 @@ font-size: 2rem;
 }
 
 
-  
-  section {
-    width: 100vw;
-    height: auto;
-padding-top: 1REM;
-  }
+
 
   body {
     align-items: center;
@@ -199,7 +194,7 @@ padding-top: 1REM;
   .nav > .nav-links > a:hover {
     border-radius: 30px;
     height: 3rem;
-    background:  rgba(137, 138, 140, 0.878) ;  
+    /* background:  rgba(137, 138, 140, 0.878) ;  */ 
   }
   
   .nav > #nav-check {
