@@ -146,6 +146,18 @@ flex-direction: column;
     flex-wrap: wrap;
 
 }
+
+ @media (max-width:550px) {
+    
+      .img2{
+  padding: 3rem;
+
+
+
+      }
+
+    } 
+
 .textoPrincipal {
   
 font-size: 2rem;
@@ -172,6 +184,7 @@ font-size: 2rem;
 /* /////////////////////////////  ACA ES LO DEL NAV ////////////////////////*/
 
   .nav {
+
     border-radius: 10px;
       background-color: #0037a4;
     justify-content: space-around;
@@ -310,12 +323,7 @@ font-size: 2rem;
     margin: 0 auto;
   }
   
-.img2{
-  box-shadow: 0px 0px 20px 5px #6a6a71;
-  vertical-align: middle;
-  border-style: none;
-  border-radius: 40%;
-}
+
   
   img {
     border-radius: 5%;
@@ -721,6 +729,7 @@ transform-style: preserve-3d;
 /*Animation*/
   
   .animated-shadow {
+    margin-top: 2rem;
    padding: 1rem;
     color: #ffffff;
     left: 0;
@@ -866,43 +875,31 @@ transform-style: preserve-3d;
 
 
 
-.logo5:hover{
-  z-index: -1;
-  -webkit-animation: tiembla 0.3s;
-}
-@-webkit-keyframes tiembla{
-  0%  { -webkit-transform:rotateZ(-5deg); }
-  50% { -webkit-transform:rotateZ( 0deg) scale(.5); }
-  100%{ -webkit-transform:rotateZ( 5deg); }
-}
-
-
-
-
+.logo5 {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+ }
+.logo5:hover {
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+ }
 
 
 
 
 .ampliar{
-  -webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
-  -moz-transform:scale(1); /*Mozilla scale version*/
-  -o-transform:scale(1); /*Opera scale version*/
-  -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
-  -moz-transition-duration: 0.5s; /*Mozilla duration version*/
-  -o-transition-duration: 0.5s; /*Opera duration version*/
-  opacity: 0.7;
-  }
-  /* al pasar el cursor por encima SE AMPLIA*/
-  .ampliar:hover{
-  -webkit-transform:scale(1.1); /*Webkit:Modificamos tamaño a escala*/
-  -moz-transform:scale(1.1); /*Mozilla:Modificamos tamaño a escala*/
-  -o-transform:scale(1.1); /*Opera:Modificamos tamaño a escala*/
-  -webkit-transition-duration: 0.5s; /*Webkit:Duración de la animación*/
-  -moz-transition-duration: 0.5s; /*Mozilla:Duración de la animació*/
-  -o-transition-duration: 0.5s; /*Opera:Duración de la animació*/
-  opacity: 1;
-  }
 
+
+    /* Aumentamos la anchura y altura durante 2 segundos */
+    transition: width 2s, height 2s, transform 1s;
+}
+.ampliar:hover{
+    /* tranformamos el elemento al pasar el mouse por encima al doble de
+       su tamaño con scale(2). */
+    transform : scale(1.1);}
   .neon {
     
   
