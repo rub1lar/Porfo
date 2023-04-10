@@ -922,10 +922,11 @@ transform-style: preserve-3d;
     -webkit-text-stroke-width:0.2px; 
   }
   .a2{
-    color:whitesmoke!important ;
+    display: block;
+    color:whitesmoke ;
     font-size: 2rem;
 
   }
   .a2:hover{
-    color: #0037a4!important;
+    color: #0037a4;
   } 
