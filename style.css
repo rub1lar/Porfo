@@ -39,7 +39,8 @@
   margin-top: 4rem;
 }
 .flex {
-  margin: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -63,7 +64,6 @@ padding: 1rem;
 }
 .roboto 
 {
-  margin: 2.5rem;
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -101,6 +101,18 @@ padding: 1rem;
 
   }
 
+ /*  @media (max-width:550px) {
+    .flex {
+    margin:1rem;
+
+    } 
+  } */
+  @media (max-width:550px) {
+    .sobre-mi {
+    margin:0;
+
+    } 
+  }
   @media (min-width:650px) {
     .sobre-mi {
       font-size:1.3rem;
@@ -110,6 +122,7 @@ padding: 1rem;
     } 
   }
 .maquina {
+  z-index: -1;
   color: #FFFFFF;
 
 text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #0037a4, 0 -18px 40px #0037a4;;
@@ -330,6 +343,7 @@ font-size: 2rem;
   }
   
   .cards {
+ 
         row-gap: 2rem;
     display: flex;
     justify-content: space-around;
@@ -339,8 +353,10 @@ font-size: 2rem;
     padding: 0;
   }
   
+  
   .cards_item {
-    border-radius: 5%;
+    max-width:400px;
+        border-radius: 5%;
     box-shadow: 10px 10px 10px 10px ;
     display: flex;
     padding: 1rem;
@@ -678,38 +694,25 @@ body {
   
   display:flex ;
   align-content: center;
-max-width: 40%;
+max-width: 30%;
 max-height: auto;
   box-shadow: 0px 0px 10px 10px  #0037a4;/*  //sombra neon */
   border-radius: 50%;
 
 }
 
+.imagen:hover { 
 
-  .imagen:hover {
-    -webkit-transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;}
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
+
+  }
 
     
-.imgx {
-    margin: 20px;
-    border: 5px solid #eee;
-    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 
-    box-shadow: 0px 0px 10px 10px  #0037a4;/*  //sombra neon */
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
- 
-.imgx:hover {
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    -o-transform: rotate(-7deg);
-}
+
 /* ///////////////EFECTOS//// */
 
 
@@ -854,16 +857,57 @@ max-height: auto;
     font-size: 2.5em;
   }
   
-  .maquina span {
-      position:absolute;
-      right:0;
-      width:0;
-      background: tomato;
-      border-left: 1px solid #000;
-      animation: escribir 5s steps(30) infinite alternate;
-  }
+
   
-  @keyframes escribir {
-      from { width: 100% }
-      to { width:0 }
+
+
+
+/* ///////////////////////////////////imagennnnnnn */
+
+
+
+.logo5:hover{
+  z-index: -1;
+  -webkit-animation: tiembla 0.3s;
+}
+@-webkit-keyframes tiembla{
+  0%  { -webkit-transform:rotateZ(-5deg); }
+  50% { -webkit-transform:rotateZ( 0deg) scale(.5); }
+  100%{ -webkit-transform:rotateZ( 5deg); }
+}
+
+
+
+
+
+
+
+
+.ampliar{
+  -webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
+  -moz-transform:scale(1); /*Mozilla scale version*/
+  -o-transform:scale(1); /*Opera scale version*/
+  -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+  -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+  -o-transition-duration: 0.5s; /*Opera duration version*/
+  opacity: 0.7;
+  }
+  /* al pasar el cursor por encima SE AMPLIA*/
+  .ampliar:hover{
+  -webkit-transform:scale(1.1); /*Webkit:Modificamos tamaño a escala*/
+  -moz-transform:scale(1.1); /*Mozilla:Modificamos tamaño a escala*/
+  -o-transform:scale(1.1); /*Opera:Modificamos tamaño a escala*/
+  -webkit-transition-duration: 0.5s; /*Webkit:Duración de la animación*/
+  -moz-transition-duration: 0.5s; /*Mozilla:Duración de la animació*/
+  -o-transition-duration: 0.5s; /*Opera:Duración de la animació*/
+  opacity: 1;
+  }
+
+  .neon {
+    
+  
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d3d3d3, 0 0 25px #faf4f9;
+    -webkit-text-fill-color: #F4ECFF;
+    -webkit-text-stroke-color:#f3f1f4;
+    -webkit-text-stroke-width:0.2px; 
   }
