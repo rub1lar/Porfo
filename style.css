@@ -331,11 +331,6 @@ font-size: 2rem;
 
  
   
-  .main{
-
-    margin: 0 auto;
-  }
-  
 
   
   img {
@@ -925,7 +920,6 @@ transform-style: preserve-3d;
     display: block;
     color:whitesmoke ;
     font-size: 2rem;
-
   }
   .a2:hover{
     color: #0037a4;
