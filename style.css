@@ -921,11 +921,11 @@ transform-style: preserve-3d;
     -webkit-text-stroke-color:#f3f1f4;
     -webkit-text-stroke-width:0.2px; 
   }
-  a{
+  .a2{
     color:whitesmoke!important ;
     font-size: 2rem;
 
   }
-  a:hover{
+  .a2:hover{
     color: #0037a4!important;
-  }
+  } 
