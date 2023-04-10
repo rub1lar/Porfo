@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
     box-sizing: border-box;
   }
@@ -13,6 +14,13 @@
   }
   .vh {height: 100vh;
   }
+  
+  @media (max-width:1290px) {
+    .vh {
+      height:auto;
+    } 
+  }
+
   .vh2 {
     height:68vh;
 }
@@ -31,6 +39,7 @@
   margin-top: 4rem;
 }
 .flex {
+  margin: 4rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -73,27 +82,39 @@ padding: 1rem;
   .seccion-principal {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-around;
     align-items: center;
-
   }
   
   h1{
     font-size: 1rem;
   }
   .sobre-mi {
-   
+    padding-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
     display: flex;
     text-align: center;
     max-width: 750px;
     margin: 1rem;
-   
     color: whitesmoke;
+
   }
+
+  @media (min-width:650px) {
+    .sobre-mi {
+      font-size:1.3rem;
+    line-height: 2.5rem;
+    
+
+    } 
+  }
+.maquina {
+  color: #FFFFFF;
+
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #0037a4, 0 -18px 40px #0037a4;;
+}
 .sobremi {  
- 
-  padding: 3rem; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,12 +139,8 @@ font-size: 2rem;
   margin-left: 123px;
 }
 
-
-
-
   body {
-    align-items: center;
-    justify-content: center;    
+
      
   font-family: 'segoe ui';
   }
@@ -143,7 +160,7 @@ font-size: 2rem;
 
   .nav {
     border-radius: 10px;
-      background-color: #0037a4;;
+      background-color: #0037a4;
     justify-content: space-around;
     height: 50px;
     width: 100%;
@@ -441,6 +458,9 @@ font-size: 2rem;
     opacity:0.9;
   }
   
+  .seba {
+    font-family: 'Press Start 2P', cursive;
+  }
   .footer-basic .copyright {
     margin-top:15px;
     text-align:center;
@@ -655,14 +675,41 @@ body {
 }
 
 .imagen{
+  
   display:flex ;
   align-content: center;
-max-width: 30%;
+max-width: 40%;
 max-height: auto;
-  box-shadow: 0px 0px 10px 3px  #0037a4;/*  //sombra neon */
+  box-shadow: 0px 0px 10px 10px  #0037a4;/*  //sombra neon */
   border-radius: 50%;
+
 }
 
+
+  .imagen:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;}
+
+    
+.imgx {
+    margin: 20px;
+    border: 5px solid #eee;
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+    box-shadow: 0px 0px 10px 10px  #0037a4;/*  //sombra neon */
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+ 
+.imgx:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+}
 /* ///////////////EFECTOS//// */
 
 
@@ -796,3 +843,27 @@ max-height: auto;
  
   }
   
+
+
+
+  .maquina { 
+    position: relative; 
+    float: left;
+   
+    color: #fff;
+    font-size: 2.5em;
+  }
+  
+  .maquina span {
+      position:absolute;
+      right:0;
+      width:0;
+      background: tomato;
+      border-left: 1px solid #000;
+      animation: escribir 5s steps(30) infinite alternate;
+  }
+  
+  @keyframes escribir {
+      from { width: 100% }
+      to { width:0 }
+  }
