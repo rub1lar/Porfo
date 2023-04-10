@@ -55,7 +55,18 @@ margin: 2rem;
 padding: 1rem;
 
 }
+.certificaciones {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  padding: 2rem;
+  margin: 1rem;
 
+}
 .contacto {
   display: flex;
   padding: 1rem;
@@ -909,4 +920,12 @@ transform-style: preserve-3d;
     -webkit-text-fill-color: #F4ECFF;
     -webkit-text-stroke-color:#f3f1f4;
     -webkit-text-stroke-width:0.2px; 
+  }
+  a{
+    color:whitesmoke!important ;
+    font-size: 2rem;
+
+  }
+  a:hover{
+    color: #0037a4!important;
   }
