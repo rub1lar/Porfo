@@ -17,9 +17,13 @@
   }
 
 
+  a:hover {
+    text-decoration: none!important;
+  }
   
-  
-
+.vh{
+  height: 100vh;
+}
   .vh2 {
     height:68vh;
 }
@@ -81,7 +85,7 @@ padding: 1rem;
   border-radius: 7px;
   color: white;
 margin: 1rem;
-width: 25px;
+width: 45px;
 }
 
 .contacto {
@@ -418,7 +422,11 @@ font-size: 2rem;
   
   .card_content {
 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  align-items:center ;
     border-color: #130f89;
     padding: 1rem;
 
@@ -930,8 +938,8 @@ transform-style: preserve-3d;
        su tamaño con scale(2). */
     transform : scale(1.1);}
   .neon {
-    
-  
+    text-decoration: none;
+    width: 7rem;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d3d3d3, 0 0 25px #faf4f9;
     -webkit-text-fill-color: #F4ECFF;
     -webkit-text-stroke-color:#f3f1f4;
