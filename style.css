@@ -4,10 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
+  
     box-sizing: border-box;
   }
   header {
-  
+ 
     width: 100%;
     position: fixed;
     
@@ -17,11 +18,7 @@
 
 
   
-  @media (max-width:1290px) {
-    .vh {
-      height:auto;
-    } 
-  }
+  
 
   .vh2 {
     height:68vh;
@@ -37,7 +34,6 @@
 }
 
 .divSobreMi{
- 
   margin-top: 4rem;
 }
 .flex {
@@ -57,16 +53,37 @@ padding: 1rem;
 }
 .certificaciones {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   color: #ccc;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   align-content: space-around;
+  align-items: center;
   padding: 2rem;
   margin: 1rem;
 
 }
+
+
+.mySlidesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  align-items: center;
+
+}
+
+.botonCertificaciones {
+  background-color: #0037a4;
+  border-radius: 7px;
+  color: white;
+margin: 1rem;
+width: 25px;
+}
+
 .contacto {
   display: flex;
   padding: 1rem;
@@ -178,8 +195,7 @@ font-size: 2rem;
 }
 
   body {
-
-     
+  
   font-family: 'segoe ui';
   }
 
@@ -321,7 +337,7 @@ font-size: 2rem;
 
   @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
-  /* Design */
+
   *,
   *::before,
   *::after {
@@ -707,12 +723,13 @@ body {
 }
 
 .imagen{
-  
+
   display:flex ;
   align-content: center;
-max-width: 30%;
+max-width: 35%;
 max-height: auto;
-  box-shadow: 0px 0px 10px 10px  #0037a4;/*  //sombra neon */
+/* 
+  filter: drop-shadow(0 0 0.75rem #0016a4);  */
   border-radius: 50%;
 
 }
@@ -725,7 +742,11 @@ transform: rotateY(180deg);
 transform-style: preserve-3d;
 
   }
-
+  @media screen and (max-width:650px){
+    .imagen{
+      max-width: 50%;
+    }
+   }
     
 
 
@@ -924,3 +945,14 @@ transform-style: preserve-3d;
   .a2:hover{
     color: #0037a4;
   } 
+
+
+
+
+
+
+
+
+
+
+
