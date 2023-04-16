@@ -797,8 +797,14 @@ textarea {
 
     animation: move linear 5000ms infinite;
   
+  }
 
-  
+  @media (max-width:550px) {
+    .animated-shadow {
+    margin:0;
+    font-size: 2REM;
+
+    } 
   }
   
   /*Animación para rotar las sombras*/
