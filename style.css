@@ -799,10 +799,10 @@ textarea {
   
   }
 
-  @media (max-width:550px) {
+  @media (max-width:650px) {
     .animated-shadow {
     margin:0;
-    font-size: 2REM;
+    font-size: 3REM;
 
     } 
   }
