@@ -802,7 +802,7 @@ textarea {
   @media (max-width:650px) {
     .animated-shadow {
     margin:0;
-    font-size: 3REM;
+    font-size: 3.5REM;
 
     } 
   }
