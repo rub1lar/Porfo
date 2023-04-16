@@ -802,9 +802,12 @@ textarea {
   @media (max-width:650px) {
     .animated-shadow {
     margin:0;
-    font-size: 3.5REM;
-
-    } 
+    font-size: 3rem;}
+      .textoPrincipal{
+        font-size: 1.5rem;
+        margin-left: 23px;
+      }
+     
   }
   
   /*Animación para rotar las sombras*/
