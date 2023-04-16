@@ -612,6 +612,8 @@ flex-direction: column;
     @media (max-width: 650px) {
       .grid {
         grid-template-columns: repeat(2, 1fr);
+        padding-left: 2rem;
+      padding-right: 2rem;
       }
     }
 
@@ -626,9 +628,9 @@ flex-direction: column;
     }
   
 
-    .skills-box:hover .skills-img{
+ /*    .skills-box:hover .skills-img{
     transform: translateX(20px);
-    
+     */
 
     }
     
