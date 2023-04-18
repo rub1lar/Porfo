@@ -748,6 +748,44 @@ textarea {
   color: rgb(246, 247, 251) ;
   overflow: hidden;
 }
+
+.face-button-black {
+  margin: 1rem;
+  border-radius: 3rem;
+  height: 64px;
+  display: inline-block;
+  border: 2px solid rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none!important;
+  color: rgb(246, 247, 251) ;
+  overflow: hidden;
+}
+
+.face-button-black .icon {
+  margin-right: 6px;
+}
+.face-button-black .face-primary, .face-button-black .face-secondary {
+
+  background-color:  rgb(37, 38, 39) ;
+  color:  rgb(236, 237, 243) ;
+  display: block;
+  padding: 0 32px;
+  line-height: 64px;
+  transition: margin 0.4s;
+}
+.face-button-black .face-primary {
+  text-decoration: none;
+  background-color: rgb(8, 8, 8) ;
+  color: #f2f1f7;
+}
+.face-button-black:hover .face-primary {
+  margin-top: -64px;
+}
+
+
 .face-button .icon {
   margin-right: 6px;
 }
