@@ -42,6 +42,8 @@ background: linear-gradient(90deg, rgba(11,9,41,1) 0%, rgba(9,20,51,1) 39%, rgba
     }
 
    .animated-shadow {
+margin-top: 2.5rem!important;
+
     font-size: 3rem;
     margin-top: 2rem;
    padding: 1rem;
@@ -57,6 +59,7 @@ background: linear-gradient(90deg, rgba(11,9,41,1) 0%, rgba(9,20,51,1) 39%, rgba
   @media (max-width:650px) {
     .animated-shadow {
     margin:0;
+    
     font-size: 2rem;}
       .textoPrincipal{
         font-size: 2rem;
@@ -166,7 +169,8 @@ width: 45px;
 font-size: 2rem;
 }
   .texto-principal {
-   
+margin-top: 2.5rem!important;
+
     font-weight: 700;
     color: aliceblue!important;
     display: flex;
@@ -278,7 +282,9 @@ flex-direction: column;
 
   .nav {
 position:fixed ;
+
 z-index: 9999;
+
     border-radius: 10px;
       background-color: #0037a4;
     justify-content: space-around;
