@@ -59,35 +59,3 @@ botonHamburguesa.addEventListener("click", function() {
 
 
 
- 
-
-
-
-/* var boton = document.getElementById("nav-btn");
-
-botonHamburguesa.addEventListener("click", function() {
-  botonHamburguesa.style.display ="";
-});
- */
-
-
-
-
-
-/* for (var i = 0; i < hamburguerButton.length; i++) {
-  hamburguerButton[i].style.display = "none";
-} */
-
-// Agregue un controlador de eventos de clic a cada enlace del menú
-/* menuLinks.forEach((link) => {
-  link.addEventListener('click', () => { */
-    // Remueva la clase CSS que muestra el botón hamburguesa
-/*     for (var i = 0; i < hamburguerButton.length; i++) {
-      hamburguerButton[i].style.display = "none";
-      menuLinks.style.height ="0px";
-    }
-  });
-});
- */
-
-
